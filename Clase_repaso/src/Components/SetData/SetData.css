@@ -1,0 +1,32 @@
+.setData{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    width: 250px;
+    margin: 20px auto;
+    background-color: #bbb;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.inputData{
+    display: block;
+    width: 200px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #2f89c4;
+    color: white;
+    cursor: pointer;
+    &:hover{
+        background-color: #1b5e7a;
+    }
+}
