@@ -44,9 +44,12 @@ const SetData = () => {
   return (
     <div className='setData'>
         <h2>SetData</h2>
-        <input className='inputData' type="text" placeholder='Nombre' value={nombre} onChange={(e) => setNombre(e.target.value)}/>
-        <input className='inputData' type="text" placeholder='id' value={id} onChange={(e) => setId(e.target.value)}/>
-        <input className='inputData' type="text" placeholder='Edad' value={edad} onChange={(e) => setEdad(e.target.value)}/>
+        <label htmlFor="nombre">Nombre:</label>
+        <input className='inputData' type="text" id="nombre" placeholder='Nombre' value={nombre} onChange={(e) => setNombre(e.target.value)}/>
+        <label htmlFor="id">ID:</label>
+        <input className='inputData' type="text" id="id" placeholder='id' value={id} onChange={(e) => setId(e.target.value)}/>
+        <label htmlFor="edad">Edad:</label>
+        <input className='inputData' type="text" id="edad" placeholder='Edad' value={edad} onChange={(e) => setEdad(e.target.value)}/>
         <button onClick={handleSubmit}>Guardar</button>
         <button onClick={handleSubmit2}>Guardar CON ID personalizado</button>
     </div>
